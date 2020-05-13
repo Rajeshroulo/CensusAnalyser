@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="censusanalyser.CensusAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-13T13:43:54" hostname="LAPTOP-U0R5V4IK" time="0.222">
-  <properties/>
-  <testcase name="givenIndiaCensusData_WithWrongHeader_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.222"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
