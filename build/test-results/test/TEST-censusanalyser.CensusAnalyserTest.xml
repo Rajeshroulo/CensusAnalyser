@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="censusanalyser.CensusAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-14T04:45:59" hostname="LAPTOP-U0R5V4IK" time="1.043">
+<testsuite name="censusanalyser.CensusAnalyserTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2020-05-14T05:22:02" hostname="LAPTOP-U0R5V4IK" time="1.043">
   <properties/>
-  <testcase name="givenIndiaCensusData_whenSortedByState_shouldReturnSortedResult" classname="censusanalyser.CensusAnalyserTest" time="1.043"/>
+  <testcase name="givenStateCodeData_WithWrongTypeFile_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.249"/>
+  <testcase name="givenIndianCensusCSVFileReturnsCorrectRecords" classname="censusanalyser.CensusAnalyserTest" time="0.089"/>
+  <testcase name="givenIndiaCensusData_whenSortedByState_shouldReturnSortedResult" classname="censusanalyser.CensusAnalyserTest" time="0.163"/>
+  <testcase name="givenIndiaCensusData_WithWrongDelimiter_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.094"/>
+  <testcase name="givenStateCodeData_WithWrongHeader_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.061"/>
+  <testcase name="givenIndiaStateCode_WithWrongFile_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.002"/>
+  <testcase name="givenIndianStateCsv_shouldReturnExactCount" classname="censusanalyser.CensusAnalyserTest" time="0.029"/>
+  <testcase name="givenStateCodeData_WithWrongDelimiter_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.033"/>
+  <testcase name="givenIndiaCensusData_WithWrongTypeFile_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.098"/>
+  <testcase name="givenIndiaCensusData_WithWrongHeader_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.071"/>
+  <testcase name="givenIndiaCensusData_WithWrongFile_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.014"/>
+  <testcase name="givenIndiaCensusData_whenSortedByPopulation_shouldReturnLeastPopulationStateName" classname="censusanalyser.CensusAnalyserTest" time="0.037"/>
+  <testcase name="givenIndiaCensusData_whenSortedByState_shouldReturnLastStateName" classname="censusanalyser.CensusAnalyserTest" time="0.042"/>
+  <testcase name="givenIndiaCensusData_whenSortedByPopulation_shouldReturnHighestPopulationStateName" classname="censusanalyser.CensusAnalyserTest" time="0.028"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[Exception in thread "pool-2-thread-1" java.lang.RuntimeException: java.lang.NullPointerException
+	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:96)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at com.opencsv.bean.HeaderColumnNameMappingStrategy.verifyLineLength(HeaderColumnNameMappingStrategy.java:139)
+	at com.opencsv.bean.concurrent.ProcessCsvLine.processLine(ProcessCsvLine.java:122)
+	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:82)
+	... 3 more
+]]></system-err>
 </testsuite>
