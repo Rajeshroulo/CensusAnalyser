@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">18</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.040s</div>
+<div class="counter">0.283s</div>
 <p>duration</p>
 </div>
 </td>
@@ -63,9 +63,6 @@
 <li>
 <a href="#tab0">Tests</a>
 </li>
-<li>
-<a href="#tab1">Standard error</a>
-</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Tests</h2>
@@ -78,122 +75,11 @@
 </tr>
 </thead>
 <tr>
-<td class="success">givenIndiaCensusData_WithWrongDelimiter_ShouldThrowException</td>
-<td class="success">0.060s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaCensusData_WithWrongFile_ShouldThrowException</td>
-<td class="success">0.016s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaCensusData_WithWrongHeader_ShouldThrowException</td>
-<td class="success">0.040s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaCensusData_WithWrongTypeFile_ShouldThrowException</td>
-<td class="success">0.030s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaCensusData_whenSortedByArea_shouldReturnLargestAreaStateName</td>
-<td class="success">0.052s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaCensusData_whenSortedByArea_shouldReturnSmallestAreaStateName</td>
-<td class="success">0.076s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaCensusData_whenSortedByPopulationDensity_shouldReturnHighestPopulationDensityStateName</td>
-<td class="success">0.033s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaCensusData_whenSortedByPopulationDensity_shouldReturnLeastPopulationDensityStateName</td>
-<td class="success">0.023s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaCensusData_whenSortedByPopulation_shouldReturnHighestPopulationStateName</td>
-<td class="success">0.030s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaCensusData_whenSortedByPopulation_shouldReturnLeastPopulationStateName</td>
-<td class="success">0.050s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaCensusData_whenSortedByState_shouldReturnLastStateName</td>
-<td class="success">0.033s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaCensusData_whenSortedByState_shouldReturnSortedResult</td>
-<td class="success">0.219s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndiaStateCode_WithWrongFile_ShouldThrowException</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
 <td class="success">givenIndianCensusCSVFileReturnsCorrectRecords</td>
-<td class="success">0.081s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenIndianStateCsv_shouldReturnExactCount</td>
-<td class="success">0.008s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenStateCodeData_WithWrongDelimiter_ShouldThrowException</td>
-<td class="success">0.034s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenStateCodeData_WithWrongHeader_ShouldThrowException</td>
-<td class="success">0.018s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">givenStateCodeData_WithWrongTypeFile_ShouldThrowException</td>
-<td class="success">0.236s</td>
+<td class="success">0.283s</td>
 <td class="success">passed</td>
 </tr>
 </table>
-</div>
-<div id="tab1" class="tab">
-<h2>Standard error</h2>
-<span class="code">
-<pre>Exception in thread &quot;pool-2-thread-2&quot; java.lang.RuntimeException: java.lang.NullPointerException
-	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:96)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.NullPointerException
-	at com.opencsv.bean.HeaderColumnNameMappingStrategy.verifyLineLength(HeaderColumnNameMappingStrategy.java:139)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.processLine(ProcessCsvLine.java:122)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:82)
-	... 3 more
-Exception in thread &quot;pool-2-thread-1&quot; java.lang.RuntimeException: java.lang.NullPointerException
-	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:96)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.NullPointerException
-	at com.opencsv.bean.HeaderColumnNameMappingStrategy.verifyLineLength(HeaderColumnNameMappingStrategy.java:139)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.processLine(ProcessCsvLine.java:122)
-	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:82)
-	... 3 more
-</pre>
-</span>
 </div>
 </div>
 <div id="footer">
@@ -203,7 +89,7 @@ Caused by: java.lang.NullPointerException
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 14 May, 2020 12:19:28 PM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 15 May, 2020 7:32:32 PM</p>
 </div>
 </div>
 </body>

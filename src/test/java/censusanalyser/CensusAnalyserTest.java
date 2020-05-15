@@ -17,6 +17,7 @@ public class CensusAnalyserTest {
     private static final String STATE_CODE_TEXT_FILE_PATH = "./src/test/resources/IndiaStateCode.txt";
     private static final String STATE_CODE_WRONG_DELIMITER_CSV_FILE_PATH = "./src/test/resources/IndiaStateCodeWrongDelimiter.csv";
     private static final String STATE_CODE_WRONG_HEADER_CSV_FILE_PATH = "./src/test/resources/IndiaStateCodeWrongHeader.csv";
+    private static final String US_CENSUS_CSV_FILE_PATH = "./src/test/resources/USCensusData.csv";
 
 
 
