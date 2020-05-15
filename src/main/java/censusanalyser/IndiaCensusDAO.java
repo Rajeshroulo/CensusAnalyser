@@ -5,6 +5,7 @@ public class IndiaCensusDAO {
         public int densityPerSqKm;
         public String state;
         public int areaInSqKm;
+        public String stateCode;
 
     public int getPopulation() {
         return population;
