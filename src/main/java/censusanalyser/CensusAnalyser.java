@@ -1,47 +1,23 @@
 package censusanalyser;
 
 import com.google.gson.Gson;
-import java.io.IOException;
-import java.io.Reader;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
+
 
 
 public class CensusAnalyser {
     Map<String, CensusDAO> censusStateMap = null;
 
-    public int loadUsCensusData(String csvFilePath) throws CensusAnalyserException {
-        censusStateMap = new CensusLoader().loadCensusData(csvFilePath,USCensusCSV.class);
+    public int loadUsCensusData(String... csvFilePath) throws CensusAnalyserException {
+        censusStateMap = new CensusLoader().loadCensusData(USCensusCSV.class,csvFilePath);
         return censusStateMap.size();
     }
 
-    public int loadIndiaCensusData(String csvFilePath) throws CensusAnalyserException {
-        censusStateMap = new CensusLoader().loadCensusData(csvFilePath, IndiaCensusCSV.class);
+    public int loadIndiaCensusData(String... csvFilePath) throws CensusAnalyserException {
+        censusStateMap = new CensusLoader().loadCensusData(IndiaCensusCSV.class,csvFilePath);
         return censusStateMap.size();
 
-    }
-
-    public int loadIndiaStateCode(String csvFilePath) throws CensusAnalyserException {
-        try ( Reader reader = Files.newBufferedReader(Paths.get(csvFilePath)))
-        {
-            ICSVBuilder csvBuilder = CSVBuilderFactory.createCSVBuilder();
-            Iterator<IndiaStateCodeCSV> csvFileIterator = csvBuilder.getCSVFileIterator(reader, IndiaStateCodeCSV.class);
-            Iterable<IndiaStateCodeCSV> csvIterable = () -> csvFileIterator;
-            StreamSupport.stream(csvIterable.spliterator(),false)
-                    .filter(csvState -> censusStateMap.get(csvState.state) != null)
-                    .forEach(csvState -> censusStateMap.get(csvState.state).stateCode = csvState.stateCode);
-            return this.censusStateMap.size();
-        } catch (IOException e) {
-            throw new CensusAnalyserException(e.getMessage(),
-                    CensusAnalyserException.ExceptionType.CENSUS_FILE_PROBLEM);
-        }catch (RuntimeException e) {
-            throw new CensusAnalyserException(e.getMessage(),CensusAnalyserException.ExceptionType.CENSUS_FILE_PROBLEM);
-        }catch (CSVBuilderException e) {
-            throw new CensusAnalyserException(e.getMessage(),e.type.name());
-        }
     }
 
     public String getStateWiseSortedCensusData() throws CensusAnalyserException {
