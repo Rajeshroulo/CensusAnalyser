@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="censusanalyser.CensusAnalyserTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2020-05-16T05:04:19" hostname="LAPTOP-U0R5V4IK" time="0.762">
+<testsuite name="censusanalyser.CensusAnalyserTest" tests="27" skipped="0" failures="0" errors="0" timestamp="2020-05-16T05:20:12" hostname="LAPTOP-U0R5V4IK" time="0.869">
   <properties/>
   <testcase name="givenUSCensusData_whenSortedByPopulation_shouldReturnLeastPopulationStateName" classname="censusanalyser.CensusAnalyserTest" time="0.074"/>
-  <testcase name="givenIndiaCensusData_WithWrongDelimiter_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.245"/>
-  <testcase name="givenUSCensusData_whenSortedByPopulation_shouldReturnHighestPopulationStateName" classname="censusanalyser.CensusAnalyserTest" time="0.003"/>
-  <testcase name="givenUSCensusData_whenSortedByPopulationDensity_shouldReturnHighestPopulationDensityStateName" classname="censusanalyser.CensusAnalyserTest" time="0.002"/>
-  <testcase name="givenIndiaCensusData_whenSortedByArea_shouldReturnSmallestAreaStateName" classname="censusanalyser.CensusAnalyserTest" time="0.059"/>
-  <testcase name="givenIndianCensusCSVFile_shouldReturnsTotalNumberOfCorrectRecords" classname="censusanalyser.CensusAnalyserTest" time="0.026"/>
-  <testcase name="givenUSCensusData_whenSortedByPopulationDensity_shouldReturnLeastPopulationDensityStateName" classname="censusanalyser.CensusAnalyserTest" time="0.002"/>
-  <testcase name="givenIndiaCensusData_WithWrongTypeFile_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.042"/>
-  <testcase name="givenUSCensusCSVFile_shouldReturnsTotalNumberOfRecords" classname="censusanalyser.CensusAnalyserTest" time="0.002"/>
-  <testcase name="givenUSCensusData_whenSortedByArea_shouldReturnStateNameWithSmallestArea" classname="censusanalyser.CensusAnalyserTest" time="0.006"/>
-  <testcase name="givenIndiaCensusData_WithWrongHeader_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.034"/>
-  <testcase name="givenIndiaCensusData_whenSortedByArea_shouldReturnLargestAreaStateName" classname="censusanalyser.CensusAnalyserTest" time="0.023"/>
-  <testcase name="givenIndiaCensusData_WithWrongFile_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.002"/>
-  <testcase name="givenIndiaCensusData_whenSortedByPopulation_shouldReturnLeastPopulationStateName" classname="censusanalyser.CensusAnalyserTest" time="0.04"/>
-  <testcase name="givenIndiaCensusData_whenSortedByArea_shouldReturnStateNameOf7thLargestArea" classname="censusanalyser.CensusAnalyserTest" time="0.033"/>
-  <testcase name="givenIndiaCensusData_whenSortedByPopulationDensity_shouldReturnHighestPopulationDensityStateName" classname="censusanalyser.CensusAnalyserTest" time="0.025"/>
+  <testcase name="givenUSCensusData_whenSortedByStateId_shouldReturnLastStateId" classname="censusanalyser.CensusAnalyserTest" time="0.002"/>
+  <testcase name="givenIndiaCensusData_WithWrongDelimiter_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.258"/>
+  <testcase name="givenUSCensusData_whenSortedByPopulation_shouldReturnHighestPopulationStateName" classname="censusanalyser.CensusAnalyserTest" time="0.002"/>
+  <testcase name="givenUSCensusData_whenSortedByStateName_shouldReturnFirstStateName" classname="censusanalyser.CensusAnalyserTest" time="0.002"/>
+  <testcase name="givenUSCensusData_whenSortedByPopulationDensity_shouldReturnHighestPopulationDensityStateName" classname="censusanalyser.CensusAnalyserTest" time="0.003"/>
+  <testcase name="givenIndiaCensusData_whenSortedByArea_shouldReturnSmallestAreaStateName" classname="censusanalyser.CensusAnalyserTest" time="0.055"/>
+  <testcase name="givenUSCensusData_whenSortedByStateName_shouldReturnLastStateName" classname="censusanalyser.CensusAnalyserTest" time="0.003"/>
+  <testcase name="givenIndianCensusCSVFile_shouldReturnsTotalNumberOfCorrectRecords" classname="censusanalyser.CensusAnalyserTest" time="0.059"/>
+  <testcase name="givenUSCensusData_whenSortedByPopulationDensity_shouldReturnLeastPopulationDensityStateName" classname="censusanalyser.CensusAnalyserTest" time="0.001"/>
+  <testcase name="givenIndiaCensusData_WithWrongTypeFile_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.055"/>
+  <testcase name="givenIndiaCensusData_whenSortedByStateCode_shouldReturnLastStateCode" classname="censusanalyser.CensusAnalyserTest" time="0.034"/>
+  <testcase name="givenUSCensusCSVFile_shouldReturnsTotalNumberOfRecords" classname="censusanalyser.CensusAnalyserTest" time="0.001"/>
+  <testcase name="givenUSCensusData_whenSortedByArea_shouldReturnStateNameWithSmallestArea" classname="censusanalyser.CensusAnalyserTest" time="0.001"/>
+  <testcase name="givenIndiaCensusData_WithWrongHeader_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.026"/>
+  <testcase name="givenIndiaCensusData_whenSortedByStateCode_shouldReturnFirstStateCode" classname="censusanalyser.CensusAnalyserTest" time="0.045"/>
+  <testcase name="givenIndiaCensusData_whenSortedByArea_shouldReturnLargestAreaStateName" classname="censusanalyser.CensusAnalyserTest" time="0.027"/>
+  <testcase name="givenIndiaCensusData_WithWrongFile_ShouldThrowException" classname="censusanalyser.CensusAnalyserTest" time="0.001"/>
+  <testcase name="givenIndiaCensusData_whenSortedByPopulation_shouldReturnLeastPopulationStateName" classname="censusanalyser.CensusAnalyserTest" time="0.021"/>
+  <testcase name="givenIndiaCensusData_whenSortedByArea_shouldReturnStateNameOf7thLargestArea" classname="censusanalyser.CensusAnalyserTest" time="0.026"/>
+  <testcase name="givenUSCensusData_whenSortedByStateId_shouldReturnFirstStateId" classname="censusanalyser.CensusAnalyserTest" time="0.004"/>
+  <testcase name="givenIndiaCensusData_whenSortedByPopulationDensity_shouldReturnHighestPopulationDensityStateName" classname="censusanalyser.CensusAnalyserTest" time="0.047"/>
   <testcase name="givenUSCensusData_whenSortedByArea_shouldReturnStateNameWithLargestArea" classname="censusanalyser.CensusAnalyserTest" time="0.001"/>
   <testcase name="givenIndiaCensusData_whenSortedByState_shouldReturnLastStateName" classname="censusanalyser.CensusAnalyserTest" time="0.023"/>
-  <testcase name="givenIndiaCensusData_whenSortedByPopulation_shouldReturnHighestPopulationStateName" classname="censusanalyser.CensusAnalyserTest" time="0.041"/>
-  <testcase name="givenIndiaCensusData_whenSortedByState_shouldReturnFirstStateName" classname="censusanalyser.CensusAnalyserTest" time="0.028"/>
-  <testcase name="givenIndiaCensusData_whenSortedByPopulationDensity_shouldReturnLeastPopulationDensityStateName" classname="censusanalyser.CensusAnalyserTest" time="0.032"/>
+  <testcase name="givenIndiaCensusData_whenSortedByPopulation_shouldReturnHighestPopulationStateName" classname="censusanalyser.CensusAnalyserTest" time="0.027"/>
+  <testcase name="givenIndiaCensusData_whenSortedByState_shouldReturnFirstStateName" classname="censusanalyser.CensusAnalyserTest" time="0.023"/>
+  <testcase name="givenIndiaCensusData_whenSortedByPopulationDensity_shouldReturnLeastPopulationDensityStateName" classname="censusanalyser.CensusAnalyserTest" time="0.033"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
